@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>3D</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="uids"></div>
+    <div class="content">
+      <div id="renderType">Cube</div>
+      <ul class="select" id="select">
+        <li class="select_option active" data-type="cube">Cube</li>
+        <li class="select_option" data-type="cylinder">Cylinder</li>
+        <li class="select_option" data-type="sphere">Sphere</li>
+      </ul>
+    </div>
+    <div id="size">
+      <input type="number" min="1" max="10" value="1" id="sizeX">
+      <input type="number" min="1" max="10" value="1" id="sizeY">
+      <input type="number" min="1" max="10" value="1" id="sizeZ"><a href="javascript:void(0);" id="updateSize">Update Size</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
